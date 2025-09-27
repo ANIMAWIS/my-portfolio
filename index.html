@@ -1,118 +1,123 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jefson Souza | Portfólio</title>
     <link rel="stylesheet" href="style.css">
-    <title>Jefson Souza - Portfolio</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <meta name="description" content="Portfólio profissional de Jefson Souza, desenvolvedor Full Stack, ilustrador e eletrotécnico.">
   </head>
   <body>
-    <header>
-      <div class="imgcab">
-        <img width="200px" style="border-radius: 75px;" src="12.jpg" alt="Foto 1">
-        <img width="200px" style="border-radius: 75px;" src="13.jpg" alt="Foto 2">
-        <img width="200px" style="border-radius: 75px;" src="14.jpg" alt="Foto 3">
+    <header class="header">
+      <div class="profile">
+        <img src="12.jpg" alt="Jefson Souza" class="profile-img" />
+        <div>
+          <h1>Jefson Souza</h1>
+          <p class="subtitle">Full Stack Developer • Ilustrador • Eletrotécnico</p>
+        </div>
       </div>
-      <div class="cab">
-        <h1 style="color: aqua;">Jefson Souza</h1>
-        <h2>Full Stack Developer, Ilustrator and Eletrotecne</h2>
-      </div>
-      <nav>
+      <nav class="nav">
         <button class="hamburger" aria-label="Abrir menu" aria-expanded="false">
-          <span></span>
-          <span></span>
-          <span></span>
+          <span></span><span></span><span></span>
         </button>
         <ul class="navbar">
           <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#portfolio">Portfólio</a></li>
-          <li><a href="#contact">Contato</a></li>
+          <li><a href="#competencias">Competências</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section id="portfolio" class="portfolio">
-        <h3>Olá, eu sou <span style="color: aqua;">Jefson Souza</span>, seja bem vindo ao meu portfólio!</h3>
-      </section>
-
       <section id="sobre" class="sobre">
-        <h3>Sobre</h3>
-        <p>Sou um desenvolvedor Full Stack com experiência em JavaScript, TypeScript, React, Python e Node.js. Tenho paixão por criar soluções inovadoras e eficientes para desafios complexos. Além disso, sou ilustrador e tenho habilidades em design gráfico, o que me permite trazer uma perspectiva criativa para meus projetos de desenvolvimento.</p>
-        <p>Minha abordagem ao desenvolvimento é centrada no usuário, buscando sempre entender as necessidades do cliente e do público-alvo. Estou constantemente aprendendo e me atualizando com as últimas tendências e tecnologias para garantir que minhas soluções sejam modernas e eficazes.</p>
-        <p>Além das minhas habilidades técnicas, sou um excelente comunicador e colaborador, capaz de trabalhar bem em equipe e contribuir para um ambiente de trabalho positivo e produtivo.</p>
+        <h2>Sobre mim</h2>
+        <p>
+          Sou apaixonado por tecnologia, design e inovação. Atuo como desenvolvedor Full Stack, ilustrador e eletrotécnico, sempre buscando unir criatividade e eficiência em cada projeto. Tenho experiência com JavaScript, TypeScript, React, Python, Node.js e ferramentas modernas de desenvolvimento.
+        </p>
+        <p>
+          Meu foco é entregar soluções que realmente resolvem problemas, com código limpo, acessível e escalável. Gosto de aprender, compartilhar conhecimento e colaborar em equipes multidisciplinares.
+        </p>
       </section>
 
-      <section class="competencias">
-        <h3>Competências</h3>
+      <section id="competencias" class="competencias">
+        <h2>Competências</h2>
         <ul>
-          <li>JavaScript</li>
-          <li>TypeScript</li>
-          <li>React</li>
-          <li>Python</li>
-          <li>Node.js</li>
-          <li>Illustration</li>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>Git</li>
-          <li>GitHub</li>
-          <li>SQL</li>
-          <li>Docker</li>
-          <li>Figma</li>
+          <li><img src="js.svg" alt="JavaScript" title="JavaScript">JavaScript</li>
+          <li><img src="ts.svg" alt="TypeScript" title="TypeScript">TypeScript</li>
+          <li><img src="react.svg" alt="React" title="React">React</li>
+          <li><img src="python.svg" alt="Python" title="Python">Python</li>
+          <li><img src="node.svg" alt="Node.js" title="Node.js">Node.js</li>
+          <li><img src="docker.svg" alt="Docker" title="Docker">Docker</li>
+          <li><img src="figma.svg" alt="Figma" title="Figma">Figma</li>
+          <li><img src="git.svg" alt="Git" title="Git">Git</li>
+          <li><img src="github.svg" alt="GitHub" title="GitHub">GitHub</li>
+          <li><img src="sql.svg" alt="SQL" title="SQL">SQL</li>
+          <li><img src="html.svg" alt="HTML" title="HTML">HTML</li>
+          <li><img src="css.svg" alt="CSS" title="CSS">CSS</li>
         </ul>
       </section>
 
-      <section class="projects">
-        <h3>Projetos</h3>
+      <section id="projetos" class="projects">
+        <h2>Projetos em destaque</h2>
         <div class="cards">
-          <div class="card">
-            <h4>Calculadora com JavaScript</h4>
-            <p>Uma calculadora desenvolvida em JavaScript especificamente para controle e planejamento financeiro.</p>
-            <ul class="competencias">
+          <article class="card">
+            <img src="calc.png" alt="Calculadora JS" class="card-img">
+            <h3>Calculadora Financeira</h3>
+            <p>Aplicação web para controle financeiro, desenvolvida com JavaScript, HTML e CSS. Interface intuitiva e responsiva.</p>
+            <ul class="tags">
+              <li>JavaScript</li>
               <li>HTML</li>
               <li>CSS</li>
-              <li>JavaScript</li>
               <li>Figma</li>
             </ul>
-          </div>
-          <div class="card">
-            <h4>Software de gerenciamento de tarefas em Python</h4>
-            <p>Uma calculadora desenvolvida em JavaScript especificamente para controle e planejamento financeiro.</p>
-            <ul class="competencias">
+            <a href="#" class="btn" target="_blank">Ver projeto</a>
+          </article>
+          <article class="card">
+            <img src="tasks.png" alt="Gerenciador de tarefas Python" class="card-img">
+            <h3>Gerenciador de Tarefas</h3>
+            <p>Software desktop para organização de tarefas, feito em Python com PyQt5. Permite criar, editar e acompanhar atividades.</p>
+            <ul class="tags">
               <li>Python</li>
-              <li>PYQT5</li>
+              <li>PyQt5</li>
               <li>Figma</li>
             </ul>
-          </div>
-          <div class="card">
-            <h4>Project 3</h4>
-            <p>Brief description of Project 3.</p>
-            <p>More detailed information about Project 3.</p>
-          </div>
+            <a href="#" class="btn" target="_blank">Ver projeto</a>
+          </article>
+          <article class="card">
+            <img src="project3.png" alt="Outro projeto" class="card-img">
+            <h3>Projeto 3</h3>
+            <p>Descrição breve do projeto 3. Mais detalhes e funcionalidades podem ser adicionados aqui.</p>
+            <ul class="tags">
+              <li>React</li>
+              <li>Node.js</li>
+            </ul>
+            <a href="#" class="btn" target="_blank">Ver projeto</a>
+          </article>
         </div>
       </section>
 
-      <section id="contact" class="contact">
-        <h3>Contato</h3>
-        <p>Se você deseja entrar em contato comigo essas são as opções:</p>
+      <section id="contato" class="contact">
+        <h2>Contato</h2>
+        <p>Vamos conversar? Escolha uma das opções abaixo:</p>
         <ul class="c-i">
           <li>
             <a href="https://github.com/jefson-souza" target="_blank" rel="noopener">
-              <img src="github.png" alt="GitHub" width="30" height="30" style="vertical-align: middle; margin-right: 8px;">
-              GitHub
+              <img src="github.svg" alt="GitHub" width="32" height="32">
+              <span>GitHub</span>
             </a>
           </li>
           <li>
             <a href="https://www.linkedin.com/in/jefson-souza/" target="_blank" rel="noopener">
-              <img src="linkedin.png" alt="LinkedIn" width="30" height="30" style="vertical-align: middle; margin-right: 8px;">
-              LinkedIn
+              <img src="linkedin.svg" alt="LinkedIn" width="32" height="32">
+              <span>LinkedIn</span>
             </a>
           </li>
           <li>
             <a href="mailto:jefsonsouza2018@gmail.com">
-              <img src="email.png" alt="Email" width="30" height="30" style="vertical-align: middle; margin-right: 8px;">
-              Email
+              <img src="email.svg" alt="Email" width="32" height="32">
+              <span>Email</span>
             </a>
           </li>
         </ul>
@@ -120,9 +125,9 @@
     </main>
 
     <footer>
-      <p>© 2025 Jefson Souza Juntamente Com a ANIMAWIS. Todos os direitos reservados.</p>
+      <p>© 2025 Jefson Souza & ANIMAWIS. Todos os direitos reservados.</p>
     </footer>
-    <script type="module" src="/src/main.tsx"></script>
+
     <script>
       // Menu hamburger JS
       const hamburger = document.querySelector('.hamburger');
@@ -133,7 +138,6 @@
         const expanded = hamburger.getAttribute('aria-expanded') === 'true';
         hamburger.setAttribute('aria-expanded', !expanded);
       });
-      // Fecha menu ao clicar em link
       document.querySelectorAll('.navbar a').forEach(link => {
         link.addEventListener('click', () => {
           navbar.classList.remove('active');
