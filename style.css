@@ -6,7 +6,7 @@ a { color: inherit; text-decoration: none; }
 /* Header */
 .header { background: #222; padding: 24px 0 0 0; }
 .profile { display: flex; align-items: center; gap: 24px; max-width: 900px; margin: 0 auto; }
-.profile-img { width: 96px; height: 96px; border-radius: 50%; object-fit: cover; border: 3px solid aqua; }
+.profile-img { width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 3px solid aqua; }
 .subtitle { color: #67cde6; font-size: 1.1rem; margin-top: 4px; }
 
 /* Navbar */
@@ -70,4 +70,5 @@ body { padding-bottom: 80px; }
   body { padding-bottom: 80px; }
   .contact ul.c-i { flex-direction: column; gap: 16px; align-items: center; }
 }
+
 
